@@ -256,7 +256,7 @@ export default function Dashboard() {
   
       // Sign the transaction bytes with the ephemeral private key
       const txb = new TransactionBlock();
-      const packageObjectId = "0xa9162ca798e2ab2f98d28b1281ad872f832708f2bb03d74b6aeb72cc57444661";
+      const packageObjectId = "0xd348310f8e57743321ecbb0059c7c7c007f6cf9d1357df5cb600f4ba0ebde5bd";
       txb.moveCall({
         target: `${packageObjectId}::snl::initialize_game`,
         arguments: [
@@ -329,7 +329,7 @@ export default function Dashboard() {
                 query: {
                     MoveModule: {
                         module: `snl`,
-                        package: '0xa9162ca798e2ab2f98d28b1281ad872f832708f2bb03d74b6aeb72cc57444661',
+                        package: '0xd348310f8e57743321ecbb0059c7c7c007f6cf9d1357df5cb600f4ba0ebde5bd',
                     },
                 },
                 limit: 50,
